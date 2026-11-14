@@ -133,12 +133,17 @@ npm run preview
 
 ## 📸 Screenshots
 
-Screenshots of the website can be added here.
+### 🏠 Home Page
+![Home Page](screenshots/1.png)
 
-<!-- Example:
-![Home Page](screenshots/home.png)
-![About Page](screenshots/about.png)
--->
+### 👤 About Page
+![About Page](screenshots/2.png)
+
+### 🛠️ Services Page
+![Services Page](screenshots/3.png)
+
+### 📩 Contact Page
+![Contact Page](screenshots/4.png)
 
 ## 🎯 Learning Objectives
 
