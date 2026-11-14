@@ -1,0 +1,339 @@
+/* =========================
+   1. General Styling
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* =========================
+   2. Header
+========================= */
+
+.header {
+  background: #0f172a;
+  color: white;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 15px #00000020;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: #60a5fa;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+nav a.active {
+  color: #60a5fa;
+  border-bottom: 2px solid #60a5fa;
+  padding-bottom: 5px;
+}
+
+/* =========================
+   3. Home Hero Section
+========================= */
+
+.hero {
+  min-height: 520px;
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      #2563eb55,
+      transparent 35%
+    ),
+    linear-gradient(135deg, #0f172a, #172554, #1e40af);
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 55px);
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background: #3b82f6;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #60a5fa;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px #3b82f655;
+}
+
+/* =========================
+   4. Page Title
+========================= */
+
+.page-title {
+  background:
+    radial-gradient(circle at top right, #3b82f655, transparent 40%),
+    linear-gradient(135deg, #0f172a, #1e3a8a);
+
+  color: white;
+  text-align: center;
+  padding: 85px 20px;
+}
+
+.page-title h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  color: #cbd5e1;
+  font-size: 17px;
+}
+
+/* =========================
+   5. Common Sections
+========================= */
+
+.section {
+  padding: 75px 20px;
+  text-align: center;
+  background: white;
+}
+
+.section h2 {
+  font-size: 30px;
+  color: #0f172a;
+  margin-bottom: 18px;
+  font-weight: 750;
+}
+
+.section p {
+  max-width: 720px;
+  margin: auto;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.light {
+  background: #eff6ff;
+}
+
+/* =========================
+   6. Cards
+========================= */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.card {
+  background: white;
+  padding: 35px 25px;
+  width: 270px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 20px #0f172a08;
+  font-weight: 700;
+  color: #1e3a8a;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px #2563eb20;
+  border-color: #60a5fa;
+}
+
+/* =========================
+   7. Contact Form
+========================= */
+
+.contact-form {
+  max-width: 550px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px #3b82f620;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   8. Footer
+========================= */
+
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 45px 15px;
+}
+
+.footer h3 {
+  color: #60a5fa;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* =========================
+   9. Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+  }
+
+  .hero {
+    min-height: 430px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .page-title h1 {
+    font-size: 32px;
+  }
+
+  .section {
+    padding: 55px 18px;
+  }
+
+  .section h2 {
+    font-size: 25px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
